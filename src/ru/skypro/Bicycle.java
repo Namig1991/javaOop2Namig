@@ -1,10 +1,11 @@
 package ru.skypro;
 
 public class Bicycle extends WheeledTransport {
-    public String modelName;
-    public int wheelsCount;
+    public Bicycle ( String modelName) {
+        super(modelName, 2);
+    }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Bicycle (String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
 }
